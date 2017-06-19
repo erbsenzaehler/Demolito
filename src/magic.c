@@ -14,6 +14,7 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "bitboard.h"
+#include "magic.h"
 
 static const int RShift[NB_SQUARE] = {
     52, 53, 53, 53, 53, 53, 53, 52,
