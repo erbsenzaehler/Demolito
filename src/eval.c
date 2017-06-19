@@ -13,8 +13,12 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
-#include "bitboard.h"
 #include "eval.h"
+#include <assert.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include "bitboard.h"
 #include "position.h"
 #include "smp.h"
 

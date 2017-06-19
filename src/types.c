@@ -14,6 +14,7 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "types.h"
+#include <stdlib.h>
 
 bool Chess960 = false;
 

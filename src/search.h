@@ -1,6 +1,8 @@
 #pragma once
 #include <stdatomic.h>
+#include <stdint.h>
 #include "smp.h"
+#include "types.h"
 #include "zobrist.h"
 
 extern atomic_uint_fast64_t Signal;

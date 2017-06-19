@@ -1,14 +1,7 @@
 #pragma once
 #include <assert.h>
-#include <inttypes.h>
 #include <stdbool.h>
-#include <stdlib.h>
-#include <string.h>
-#include <assert.h>
-#include <stdio.h>
-#include <time.h>
-
-#include "platform.h"
+#include <stdint.h>
 
 extern bool Chess960;
 

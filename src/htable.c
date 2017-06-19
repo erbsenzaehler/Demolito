@@ -14,6 +14,8 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "htable.h"
+#include <stdlib.h>
+#include "types.h"
 
 HashEntry *HashTable = NULL;
 uint64_t HashCount = 0;

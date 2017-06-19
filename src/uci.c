@@ -13,6 +13,11 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
+#include "uci.h"
+#include <inttypes.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "bitboard.h"
 #include "eval.h"
 #include "gen.h"
@@ -21,7 +26,7 @@
 #include "position.h"
 #include "search.h"
 #include "smp.h"
-#include "uci.h"
+#include "zobrist.h"
 
 #define uci_printf(...) printf(__VA_ARGS__), fflush(stdout)
 #define uci_puts(s) puts(s), fflush(stdout)

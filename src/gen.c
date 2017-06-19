@@ -13,10 +13,14 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
-#include "bitboard.h"
 #include "gen.h"
+#include <assert.h>
+#include <inttypes.h>
+#include <stdio.h>
+#include "bitboard.h"
 #include "move.h"
 #include "position.h"
+
 
 static move_t *serialize_moves(int from, bitboard_t tss, move_t *mList)
 {

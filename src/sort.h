@@ -1,5 +1,8 @@
 #pragma once
+#include <stddef.h>
 #include "gen.h"
+#include "smp.h"
+#include "types.h"
 
 void history_update(Worker *worker, int c, move_t m, int bonus);
 

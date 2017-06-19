@@ -1,4 +1,6 @@
 #pragma once
+#include <stdbool.h>
+#include <stdint.h>
 #include "types.h"
 
 enum {MAX_MOVES = 192};

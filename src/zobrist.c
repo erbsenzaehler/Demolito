@@ -14,6 +14,7 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "zobrist.h"
+#include <assert.h>
 #include "bitboard.h"
 
 uint64_t ZobristKey[NB_COLOR][NB_PIECE][NB_SQUARE];

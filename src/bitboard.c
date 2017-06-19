@@ -14,6 +14,8 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "bitboard.h"
+#include <assert.h>
+#include <stdio.h>
 
 static const int PDir[2][2] = {{1,-1},{1,1}};
 static const int NDir[8][2] = {{-2,-1},{-2,1},{-1,-2},{-1,2},{1,-2},{1,2},{2,-1},{2,1}};

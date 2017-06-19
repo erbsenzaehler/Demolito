@@ -13,12 +13,18 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
+#include "test.h"
+#include <inttypes.h>
+#include <stdio.h>
+#include <string.h>
 #include "gen.h"
 #include "htable.h"
+#include "platform.h"
 #include "position.h"
 #include "search.h"
 #include "smp.h"
-#include "test.h"
+#include "types.h"
+#include "zobrist.h"
 
 uint64_t test_search(bool perft, int depth, int threads)
 {

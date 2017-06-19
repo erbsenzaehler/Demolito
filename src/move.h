@@ -1,4 +1,5 @@
 #pragma once
+#include <stdbool.h>
 #include "types.h"
 
 bool move_ok(move_t m);
