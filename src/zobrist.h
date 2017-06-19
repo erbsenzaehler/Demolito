@@ -24,6 +24,6 @@ extern uint64_t ZobristKey[NB_COLOR][NB_PIECE][NB_SQUARE];
 extern uint64_t ZobristEnPassant[NB_SQUARE + 1];
 extern uint64_t ZobristTurn;
 
-void zobrist_init();
+void zobrist_init(void);
 uint64_t zobrist_keys(int c, int p, uint64_t sqs);
 uint64_t zobrist_castling(bitboard_t castlableRooks);

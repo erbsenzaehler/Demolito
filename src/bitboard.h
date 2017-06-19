@@ -1,7 +1,7 @@
 #pragma once
 #include "types.h"
 
-void bb_init();
+void bb_init(void);
 
 /* Bitboard Accessors */
 

@@ -35,7 +35,7 @@ static void safe_set_bit(bitboard_t *b, int r, int f)
         bb_set(b, square(r, f));
 }
 
-static void init_leaper_attacks()
+static void init_leaper_attacks(void)
 {
     for (int s = A1; s <= H8; ++s) {
         const int r = rank_of(s), f = file_of(s);
@@ -52,7 +52,7 @@ static void init_leaper_attacks()
     }
 }
 
-static void init_rays()
+static void init_rays(void)
 {
     for (int s1 = A1; s1 <= H8; ++s1) {
         const int r1 = rank_of(s1), f1 = file_of(s1);
@@ -78,7 +78,7 @@ static void init_rays()
     }
 }
 
-static void init_slider_pseudo_attacks()
+static void init_slider_pseudo_attacks(void)
 {
     for (int s = A1; s <= H8; ++s) {
         BPseudoAttacks[s] = bb_battacks(s, 0);
@@ -86,9 +86,9 @@ static void init_slider_pseudo_attacks()
     }
 }
 
-void init_slider_attacks();    // in magic.cc
+void init_slider_attacks(void);    // in magic.cc
 
-void bb_init()
+void bb_init(void)
 {
     init_rays();
     init_leaper_attacks();

@@ -1,7 +1,7 @@
 #pragma once
 #include "types.h"
 
-void uci_loop();
+void uci_loop(void);
 
 typedef struct {
     int64_t start;

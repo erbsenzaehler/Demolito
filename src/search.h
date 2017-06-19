@@ -15,5 +15,5 @@ extern Stack rootStack;
 extern Limits lim;
 extern int Contempt;
 
-void search_init();
-int64_t search_go();
+void search_init(void);
+int64_t search_go(void);

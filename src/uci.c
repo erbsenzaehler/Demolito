@@ -42,7 +42,7 @@ static void uci_format_score(int score, char *str)
         sprintf(str, "cp %d", score * 100 / EP);
 }
 
-static void intro()
+static void intro(void)
 {
     uci_puts("id name Demolito " VERSION "\nid author lucasart");
     uci_printf("option name UCI_Chess960 type check default %s\n", Chess960 ? "true" : "false");
@@ -164,7 +164,7 @@ static void go(char **linePos)
     thrd_create(&Timer, search_go, NULL);
 }
 
-static void eval()
+static void eval(void)
 {
     pos_print(&rootPos);
     char str[12];
