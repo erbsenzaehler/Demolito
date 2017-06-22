@@ -87,7 +87,7 @@ uint64_t prng_rand(PRNG *prng)
     return prng->d = e + prng->a;
 }
 
-void zobrist_init()
+void zobrist_init(void)
 {
     PRNG prng;
     prng_init(&prng, 0);

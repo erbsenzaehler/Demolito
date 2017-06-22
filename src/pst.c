@@ -63,7 +63,7 @@ static eval_t pawn(int r, int f)
     return e;
 }
 
-void pst_init()
+void pst_init(void)
 {
     typedef eval_t (*pst_fn)(int, int);
     const pst_fn PstFn[NB_PIECE] = {&knight, &bishop, &rook, &queen, &king, &pawn};

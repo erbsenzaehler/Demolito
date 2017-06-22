@@ -296,7 +296,7 @@ static int blend(const Position *pos, eval_t e)
     return e.op * total / full + e.eg * (full - total) / full;
 }
 
-void eval_init()
+void eval_init(void)
 {
     for (int s = H8; s >= A1; --s) {
         if (rank_of(s) == RANK_8)

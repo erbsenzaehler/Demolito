@@ -10,12 +10,12 @@ void smp_resize(int count)
     WorkersCount = count;
 }
 
-void smp_destroy()
+void smp_destroy(void)
 {
     free(Workers);
 }
 
-void smp_new_search()
+void smp_new_search(void)
 {
     for (int i = 0; i < WorkersCount; i++) {
         memset(Workers[i].history, 0, sizeof(Workers[i].history));
@@ -28,13 +28,13 @@ void smp_new_search()
     }
 }
 
-void smp_new_game()
+void smp_new_game(void)
 {
     for (int i = 0; i < WorkersCount; i++)
         memset(Workers[i].pawnHash, 0, sizeof(Workers[i].pawnHash));
 }
 
-int64_t smp_nodes()
+int64_t smp_nodes(void)
 {
     int64_t total = 0;
 

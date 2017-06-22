@@ -43,7 +43,7 @@ int draw_score(int ply)
 
 int Reduction[MAX_DEPTH + 1][MAX_MOVES];
 
-void search_init()
+void search_init(void)
 {
     for (int d = 1; d <= MAX_DEPTH; d++)
         for (int c = 1; c < MAX_MOVES; c++)
@@ -168,7 +168,7 @@ int iterate(Worker *worker)
     return 0;
 }
 
-int64_t search_go()
+int64_t search_go(void)
 {
     int64_t start = system_msec();
 
