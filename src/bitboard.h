@@ -1,4 +1,6 @@
 #pragma once
+#include <stdbool.h>
+
 #include "types.h"
 
 void bb_init();

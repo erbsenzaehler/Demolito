@@ -13,7 +13,10 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
+#include <stddef.h>
+
 #include "bitboard.h"
+#include "types.h"
 
 static const int RShift[NB_SQUARE] = {
     52, 53, 53, 53, 53, 53, 53, 52,

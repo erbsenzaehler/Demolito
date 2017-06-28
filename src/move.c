@@ -14,6 +14,10 @@
  * not, see <http://www.gnu.org/licenses/>.
 */
 #include "move.h"
+
+#include <assert.h>
+#include <string.h>
+
 #include "bitboard.h"
 #include "position.h"
 

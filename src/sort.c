@@ -13,11 +13,16 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
+#include "sort.h"
+
+#include <assert.h>
+#include <stdbool.h>
+
 #include "bitboard.h"
 #include "move.h"
 #include "position.h"
 #include "smp.h"
-#include "sort.h"
+#include "zobrist.h"
 
 enum {
     HISTORY_MAX = MAX_DEPTH * MAX_DEPTH,

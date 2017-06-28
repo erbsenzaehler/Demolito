@@ -15,6 +15,9 @@
 */
 #include "bitboard.h"
 
+#include <assert.h>
+#include <stdio.h>
+
 static const int PDir[2][2] = {{1,-1},{1,1}};
 static const int NDir[8][2] = {{-2,-1},{-2,1},{-1,-2},{-1,2},{1,-2},{1,2},{2,-1},{2,1}};
 static const int KDir[8][2] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};

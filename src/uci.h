@@ -1,6 +1,9 @@
 #pragma once
-#include "types.h"
+#include <stdbool.h>
+#include <stdint.h>
+
 #include "platform.h"
+#include "types.h"
 
 void uci_loop();
 

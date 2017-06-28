@@ -1,4 +1,8 @@
 #include "smp.h"
+
+#include <stdlib.h>
+#include <string.h>
+
 #include "search.h"
 
 Worker *Workers = NULL;

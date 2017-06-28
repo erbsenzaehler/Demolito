@@ -1,4 +1,6 @@
 #pragma once
+#include <stdbool.h>
+
 #include "types.h"
 
 void pos_set(Position *pos, const char *fen);

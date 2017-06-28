@@ -13,12 +13,19 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
 */
-#include <math.h>
-#include "eval.h"
-#include "htable.h"
-#include "move.h"
-#include "position.h"
 #include "search.h"
+
+#include <assert.h>
+#include <math.h>
+#include <setjmp.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+#include "eval.h"
+#include "gen.h"
+#include "htable.h"
+#include "platform.h"
+#include "position.h"
 #include "smp.h"
 #include "sort.h"
 #include "uci.h"

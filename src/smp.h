@@ -1,5 +1,7 @@
 #pragma once
 #include <setjmp.h>
+#include <stdint.h>
+
 #include "types.h"
 #include "zobrist.h"
 
