@@ -18,15 +18,15 @@ VERSION = $(shell git show -s --format=%ci | cut -d\  -f1)
 
 all:
 	$(CC) -march=native -DPEXT $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT) $(LF)
-
+	
 no_popcnt:
-	$(CC) -march=core2 $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT) -static $(LF)
+	$(CC) -march=core2 $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT)_no_popcnt -static $(LF)
 
 popcnt:
-	$(CC) -mpopcnt $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT) -static $(LF)
+	$(CC) -mpopcnt $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT)_popcnt -static $(LF)
 
 pext:
-	$(CC) -mpopcnt -mbmi2 -DPEXT $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT) -static $(LF)
+	$(CC) -mpopcnt -mbmi2 -DPEXT $(CF) -DVERSION=\"$(VERSION)\" ./src/*.c -o $(OUT)_pext -static $(LF)
 
 clean:
 	rm $(OUT)
