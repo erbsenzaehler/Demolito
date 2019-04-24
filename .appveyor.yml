@@ -10,7 +10,7 @@ before_build:
 
 build_script:
   - make no_popcnt CC=x86_64-w64-mingw32-gcc OUT=demolito_no_popcnt.exe
-  - make popcnt CC=x86_64-w64-mingw32-gcc OUT=demolito_popcnt.exe
+  - make popcnt CC="clang --target=x86_64-w64-mingw32 -fuse-ld=lld" OUT=demolito_popcnt.exe
   - make pext CC=x86_64-w64-mingw32-gcc OUT=demolito_pext.exe
 
   - 7z a demolito_no_popcnt demolito_no_popcnt.exe src\ makefile license Readme.md
